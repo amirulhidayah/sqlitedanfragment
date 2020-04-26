@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/background_splash"
+        android:id="@+id/login_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_judul"
+        app:layout_constraintTop_toBottomOf="@id/login_logo"
+        android:text="Silahkan Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorYellow" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/login_username"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/login_judul"
+        android:layout_marginHorizontal="30dp"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/yellow_button"
+        android:layout_marginTop="30dp"
+        android:hint="Masukkan Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/login_password"
+        android:background="@drawable/yellow_button"
+        android:paddingHorizontal="20dp"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/login_username"
+        android:layout_marginHorizontal="30dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:hint="Masukkan Password" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Klik Disini Jika Belum Punya Akun"
+        app:layout_constraintTop_toBottomOf="@id/login_password"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:id="@+id/login_signup"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:text="Masuk"
+        android:background="@drawable/yellow_button"
+        app:layout_constraintTop_toBottomOf="@id/login_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

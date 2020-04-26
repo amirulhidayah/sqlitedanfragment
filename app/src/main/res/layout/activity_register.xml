@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_judul"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Silahkan Daftar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorYellow" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/registrasi_user"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/register_judul"
+        android:layout_marginHorizontal="30dp"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/yellow_button"
+        android:layout_marginTop="30dp"
+        android:hint="Masukkan Username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp"
+        android:id="@+id/registrasi_password"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/registrasi_user"
+        android:layout_marginHorizontal="30dp"
+        android:textColorHint="@android:color/white"
+        android:inputType="textPassword"
+        android:background="@drawable/yellow_button"
+        android:layout_marginTop="30dp"
+        android:hint="Masukkan Password" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp"
+        android:inputType="textPassword"
+        android:id="@+id/registrasi_confirm_password"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/registrasi_password"
+        android:layout_marginHorizontal="30dp"
+        android:textColorHint="@android:color/white"
+        android:background="@drawable/yellow_button"
+        android:layout_marginTop="30dp"
+        android:hint="Masukkan Kembali Password" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Klik Disini Untuk Masuk"
+        app:layout_constraintTop_toBottomOf="@id/registrasi_confirm_password"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:id="@+id/register_login"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Daftar"
+        android:id="@+id/btn_register"
+        android:background="@drawable/yellow_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

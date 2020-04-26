@@ -1,0 +1,2 @@
+rootProject.name='sqlliteregistrasi'
+include ':app'
